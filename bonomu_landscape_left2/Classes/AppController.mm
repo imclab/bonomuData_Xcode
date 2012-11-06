@@ -639,14 +639,22 @@ int OpenEAGL_UnityCallback(UIWindow** window, int* screenWidth, int* screenHeigh
         return false;
     }
 
-    glViewport(0, 0, _surface.w, _surface.h);
+    glViewport(0, 0, _surface.size.width, _surface.size.height);
     [_window makeKeyAndVisible];
     [view release];
 
     *window = _window;
-    *screenWidth = _surface.w;
-    *screenHeight = _surface.h;
+    *screenWidth = _surface.size.width;
+    *screenHeight = _surface.size.height;
     *openglesVersion = _context.API;
+    
+    [[[UIApplication sharedApplication] keyWindow] addSubview:myView];
+    
+    GADRequest *rq = [GADRequest request];
+    
+    [bannerView loadRequest:rq];
+    
+    [myView addSubview:bannerView];
 
     _glesContextCreated = true;
 
@@ -1063,7 +1071,20 @@ void NotifyAutoOrientationChange()
 }
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
-{
+{   //admob
+    _viewController = [[UIViewController alloc]init];
+    
+    bannerView = [[GADBannerView alloc]initWithFrame:CGRectMake(0, 0, 320, 50)];
+    
+    bannerView.adUnitID = a150975c3da4d42;//admobのパブリッシャーコードが入ります
+    
+    bannerView.rootViewController = _viewController;
+    
+    _viewController.view = [[UIView alloc]initWithFrame:CGRectMake(0, 430, 320, 50)];
+    
+    myView = _viewController.view;
+    //admob
+    
     printf_console("-> applicationDidFinishLaunching()\n");
     // get local notification
     if (&UIApplicationLaunchOptionsLocalNotificationKey != nil)

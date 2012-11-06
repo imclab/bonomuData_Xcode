@@ -64,6 +64,10 @@
 		721E6D22E65042CBAF83F556 /* AdWhirlLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F2046D0EFD546ADAF2B103D /* AdWhirlLog.m */; };
 		73530E7337B24BD693072DD8 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CA454F99074F7BB5CBF218 /* CDataScanner.m */; };
 		7500285E06794F949B6E7374 /* AdWhirlClassWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1BB0E255364A93B8C8C656 /* AdWhirlClassWrapper.m */; };
+		78F3CB31164795CC00D7A1F4 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F3CB2F164795CC00D7A1F4 /* libGoogleAdMobAds.a */; };
+		78F3CB32164795CC00D7A1F4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78F3CB30164795CC00D7A1F4 /* README.txt */; };
+		78F3CB34164795FD00D7A1F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F3CB33164795FD00D7A1F4 /* StoreKit.framework */; };
+		78F3CB361647963A00D7A1F4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F3CB351647963A00D7A1F4 /* AdSupport.framework */; };
 		792D37913D584203B6950072 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9333A960427C440C99DB75AB /* MessageUI.framework */; };
 		7C754CAFFA6F44EC8F431076 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5D8FC51E94A3F91C64610 /* CDataScanner_Extensions.m */; };
 		7F36C11113C5C673007FBDD9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */; };
@@ -119,7 +123,6 @@
 		ED875F2445CB408B97E918B5 /* NSScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C62267F4318041A089C3DE0D /* NSScanner_Extensions.m */; };
 		F11F48D876B54F7DBB316BE5 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB220F22A5D488E85EE02DC /* NSDictionary_JSONExtensions.m */; };
 		F89F3EF3C64D4D0C83802DBF /* AdWhirlView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB92870F00D4EB89D899CB1 /* AdWhirlView.m */; };
-		FFB1E1B51496414D848C7282 /* AdWhirlAdapterGoogleAdMobAds.m in Sources */ = {isa = PBXBuildFile; fileRef = 20942BF0EACA4BE48B05FE6C /* AdWhirlAdapterGoogleAdMobAds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,24 +156,19 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* bonomu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bonomu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFBCD7A977141E68E05D928 /* CSerializedJSONData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CSerializedJSONData.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CSerializedJSONData.h; sourceTree = "<group>"; };
-		20942BF0EACA4BE48B05FE6C /* AdWhirlAdapterGoogleAdMobAds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlAdapterGoogleAdMobAds.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/AdWhirlAdapterGoogleAdMobAds.m; sourceTree = "<group>"; };
 		228E96EE8C054DAFBB4E2603 /* AdWhirlConfigStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlConfigStore.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlConfigStore.m; sourceTree = "<group>"; };
 		23819AD3FFD947289EB05D10 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NSDictionary_JSONExtensions.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
 		2B753E024BA84422A6DAC426 /* AdWhirlAdapterEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlAdapterEvent.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdapterEvent.h; sourceTree = "<group>"; };
 		2D73256343BF4F65BAF18E23 /* AdWhirlError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlError.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlError.m; sourceTree = "<group>"; };
 		2DE47C8567A949DD89A58399 /* AdWhirlDelegateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlDelegateProtocol.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/AdWhirlDelegateProtocol.h; sourceTree = "<group>"; };
 		2F2046D0EFD546ADAF2B103D /* AdWhirlLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlLog.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlLog.m; sourceTree = "<group>"; };
-		2F2433FCE6CE4932AA9B8284 /* GADInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADInterstitial.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADInterstitial.h; sourceTree = "<group>"; };
-		382FD055353441978830DE34 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADBannerViewDelegate.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADBannerViewDelegate.h; sourceTree = "<group>"; };
 		3AE5D8FC51E94A3F91C64610 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDataScanner_Extensions.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/CDataScanner_Extensions.m; sourceTree = "<group>"; };
 		3B69C90932384A2E9D182402 /* CJSONDeserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJSONDeserializer.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONDeserializer.h; sourceTree = "<group>"; };
-		42AB5A54B95C4231AB3EC6BB /* GADBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADBannerView.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADBannerView.h; sourceTree = "<group>"; };
 		456D0F576FF44ED7881F260E /* AdWhirlBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlBinding.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/AdWhirlBinding.m; sourceTree = "<group>"; };
 		47C749A423AD4B1E81487100 /* AdWhirlWebBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlWebBrowserController.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlWebBrowserController.h; sourceTree = "<group>"; };
 		483B408BBFD94FE28A458C0A /* CJSONSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJSONSerializer.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONSerializer.h; sourceTree = "<group>"; };
 		4A27AD843FC64E48A55EDCF6 /* AdWhirlWebBrowser.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AdWhirlWebBrowser.xib; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlWebBrowser.xib; sourceTree = "<group>"; };
 		4B2CAFB555AC443F9B401B63 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDataScanner_Extensions.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/CDataScanner_Extensions.h; sourceTree = "<group>"; };
-		4B73641813D54E72A7F58986 /* GADAdMobExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADAdMobExtras.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADAdMobExtras.h; sourceTree = "<group>"; };
 		4BE9D31C8518445EA3938498 /* NSCharacterSet_Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSCharacterSet_Extensions.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/NSCharacterSet_Extensions.m; sourceTree = "<group>"; };
 		4D7B7E3AEC0B4E0A93419F08 /* AdWhirlManager.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AdWhirlManager.mm; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/AdWhirlManager.mm; sourceTree = "<group>"; };
 		51864ABE464144A999535F94 /* CJSONDataSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJSONDataSerializer.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONDataSerializer.h; sourceTree = "<group>"; };
@@ -191,10 +189,21 @@
 		620EC33371414E58B0024F36 /* UIColor+AdWhirlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+AdWhirlConfig.h"; path = "../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/UIColor+AdWhirlConfig.h"; sourceTree = "<group>"; };
 		655E106B2A44459A908689E0 /* AdWhirlAdapterGeneric.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlAdapterGeneric.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdapterGeneric.h; sourceTree = "<group>"; };
 		69AD6D2B7BCC4A24AD81F5C2 /* libP31MonoBridge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libP31MonoBridge.a; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/GameCenter/libP31MonoBridge.a; sourceTree = "<group>"; };
-		6C5004C0A268487CBCC6BDD3 /* GADAdSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADAdSize.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADAdSize.h; sourceTree = "<group>"; };
 		6F418430D8364434B51E746C /* AWNetworkReachabilityWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AWNetworkReachabilityWrapper.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AWNetworkReachabilityWrapper.m; sourceTree = "<group>"; };
 		70E36103496B4C8E8DB4141C /* AdWhirlClassWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlClassWrapper.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlClassWrapper.h; sourceTree = "<group>"; };
-		72FBABCFB5C44683816F542C /* AdWhirlAdapterGoogleAdMobAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlAdapterGoogleAdMobAds.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/AdWhirlAdapterGoogleAdMobAds.h; sourceTree = "<group>"; };
+		78F3CB26164795CC00D7A1F4 /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		78F3CB27164795CC00D7A1F4 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		78F3CB28164795CC00D7A1F4 /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		78F3CB29164795CC00D7A1F4 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		78F3CB2A164795CC00D7A1F4 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		78F3CB2B164795CC00D7A1F4 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		78F3CB2C164795CC00D7A1F4 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		78F3CB2D164795CC00D7A1F4 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		78F3CB2E164795CC00D7A1F4 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		78F3CB2F164795CC00D7A1F4 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		78F3CB30164795CC00D7A1F4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		78F3CB33164795FD00D7A1F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		78F3CB351647963A00D7A1F4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7B133A7DCA514BE6A7FB6BEB /* AdWhirlCustomAdView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlCustomAdView.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlCustomAdView.m; sourceTree = "<group>"; };
 		7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -220,13 +229,11 @@
 		92EC8DCB23BE4A8183C100C5 /* CJSONDeserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CJSONDeserializer.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONDeserializer.m; sourceTree = "<group>"; };
 		9333A960427C440C99DB75AB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		962815B1CF4D42B08217B4F9 /* AdWhirlConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlConfig.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlConfig.h; sourceTree = "<group>"; };
-		967B7FF2F4B64190A23D64CA /* GADRequestError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADRequestError.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADRequestError.h; sourceTree = "<group>"; };
 		98A14BF5C76F4ABCA528BECF /* AdWhirlAdapterIAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlAdapterIAd.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/AdWhirlAdapterIAd.m; sourceTree = "<group>"; };
 		99DAF116DCAE49A5B338D7C9 /* ARRollerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ARRollerProtocol.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/legacy/ARRollerProtocol.h; sourceTree = "<group>"; };
 		A04DCD415BB84A3C8E3A9887 /* AdWhirlAdNetworkRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlAdNetworkRegistry.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdNetworkRegistry.h; sourceTree = "<group>"; };
 		A5CA454F99074F7BB5CBF218 /* CDataScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/CDataScanner.m; sourceTree = "<group>"; };
 		AB1BB0E255364A93B8C8C656 /* AdWhirlClassWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlClassWrapper.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlClassWrapper.m; sourceTree = "<group>"; };
-		AC4AE6AE29554A2E903B52C8 /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADAdNetworkExtras.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADAdNetworkExtras.h; sourceTree = "<group>"; };
 		ACB220F22A5D488E85EE02DC /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NSDictionary_JSONExtensions.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		ADB6D09AEF554B8785DF0B51 /* NSCharacterSet_Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NSCharacterSet_Extensions.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/Extensions/NSCharacterSet_Extensions.h; sourceTree = "<group>"; };
 		AEDE8CE7C82F4689A6044A28 /* AdWhirlAdapterCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlAdapterCustom.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdapterCustom.h; sourceTree = "<group>"; };
@@ -248,7 +255,6 @@
 		CFFEA90BC8D64A2C8A29D98C /* AdWhirlAdapterEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlAdapterEvent.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdapterEvent.m; sourceTree = "<group>"; };
 		D050467F7D504E9AA17FC376 /* CJSONScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CJSONScanner.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONScanner.h; sourceTree = "<group>"; };
 		D0B8E54B289E487E8A875EC7 /* AdWhirlManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AdWhirlManager.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/AdWhirlManager.h; sourceTree = "<group>"; };
-		D700028E8063460BA7A980BE /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADInterstitialDelegate.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADInterstitialDelegate.h; sourceTree = "<group>"; };
 		D82DCFB60E8000A5005D6AD8 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Classes/AppController.h; sourceTree = SOURCE_ROOT; };
 		D82DCFB70E8000A5005D6AD8 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppController.mm; path = Classes/AppController.mm; sourceTree = SOURCE_ROOT; };
 		D82DCFB80E8000A5005D6AD8 /* iPhone_target2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iPhone_target2AppDelegate.h; path = Classes/iPhone_target2AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -281,7 +287,6 @@
 		EF479A3E4EC2415CAD2C466C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		F2DB2B10DE294C0B94F89CF8 /* CJSONScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CJSONScanner.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/TouchJSON/JSON/CJSONScanner.m; sourceTree = "<group>"; };
 		FAEAFA85D43C4606852D6FAC /* AdWhirlAdNetworkConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AdWhirlAdNetworkConfig.m; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirl/internal/AdWhirlAdNetworkConfig.m; sourceTree = "<group>"; };
-		FD96BBCDFE51491CB955C01A /* GADRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GADRequest.h; path = ../../../BONOMU/GitHub3_/bonomu_app6_GUI_2DTK/Assets/Editor/AdWhirlAdMob/GADRequest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +294,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78F3CB361647963A00D7A1F4 /* AdSupport.framework in Frameworks */,
+				78F3CB34164795FD00D7A1F4 /* StoreKit.framework in Frameworks */,
+				56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */,
+				792D37913D584203B6950072 /* MessageUI.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */,
 				83B256E20E62FEA000468741 /* OpenGLES.framework in Frameworks */,
@@ -300,7 +309,6 @@
 				56FD43960ED4745200FE3770 /* CFNetwork.framework in Frameworks */,
 				5682F4B20F3B34FF007A219C /* MediaPlayer.framework in Frameworks */,
 				5692F3DD0FA9D8E500EBA2F1 /* CoreLocation.framework in Frameworks */,
-				56BCBA390FCF049A0030C3B2 /* SystemConfiguration.framework in Frameworks */,
 				08B24F76137BFDFA00FBA309 /* iAd.framework in Frameworks */,
 				7F36C11113C5C673007FBDD9 /* CoreMedia.framework in Frameworks */,
 				7F36C11213C5C673007FBDD9 /* CoreVideo.framework in Frameworks */,
@@ -308,12 +316,12 @@
 				56B7959B1442E0F20026B3DD /* CoreGraphics.framework in Frameworks */,
 				56B7960F1442E1770026B3DD /* CoreMotion.framework in Frameworks */,
 				56B7961A1442E1B80026B3DD /* GameKit.framework in Frameworks */,
-				792D37913D584203B6950072 /* MessageUI.framework in Frameworks */,
 				0DD2E869036A4B6D80F960B5 /* libsqlite3.0.dylib in Frameworks */,
 				449C78698DC544189E8EB3BF /* libz.1.1.3.dylib in Frameworks */,
 				D74AAB372DAE4BE39FEAEB57 /* libGameCenterPlugin.a in Frameworks */,
 				9A13E909D6CA4145A8FAECA6 /* libP31MonoBridge.a in Frameworks */,
 				37D0474B2B0044E389652286 /* libGoogleAdMobAds.a in Frameworks */,
+				78F3CB31164795CC00D7A1F4 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,39 +363,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1CC090132AFB401E81A7A377 /* AdWhirlAdMob */ = {
-			isa = PBXGroup;
-			children = (
-				967B7FF2F4B64190A23D64CA /* GADRequestError.h */,
-				FD96BBCDFE51491CB955C01A /* GADRequest.h */,
-				D700028E8063460BA7A980BE /* GADInterstitialDelegate.h */,
-				2F2433FCE6CE4932AA9B8284 /* GADInterstitial.h */,
-				382FD055353441978830DE34 /* GADBannerViewDelegate.h */,
-				42AB5A54B95C4231AB3EC6BB /* GADBannerView.h */,
-				6C5004C0A268487CBCC6BDD3 /* GADAdSize.h */,
-				AC4AE6AE29554A2E903B52C8 /* GADAdNetworkExtras.h */,
-				4B73641813D54E72A7F58986 /* GADAdMobExtras.h */,
-				20942BF0EACA4BE48B05FE6C /* AdWhirlAdapterGoogleAdMobAds.m */,
-				72FBABCFB5C44683816F542C /* AdWhirlAdapterGoogleAdMobAds.h */,
-			);
-			name = AdWhirlAdMob;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				1CC090132AFB401E81A7A377 /* AdWhirlAdMob */,
 				97583088C99543308C3C570E /* GameCenter */,
 				DB733BEA342643F2BFB0C6C7 /* AdWhirl */,
-				56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */,
 				5692F3DC0FA9D8E500EBA2F1 /* CoreLocation.framework */,
-				5682F4B10F3B34FF007A219C /* MediaPlayer.framework */,
 				83DEA7410EACED0700D8A291 /* Default.png */,
 				564640A01605DDE500F79DC3 /* Default-568h@2x.png */,
 				83DEA7420EACED0700D8A291 /* Icon.png */,
 				D82DCFB50E8000A5005D6AD8 /* Classes */,
 				D8A1C7220E80637F000160D3 /* Libraries */,
 				8D1107310486CEB800E47090 /* Info.plist */,
+				78F3CB25164795B600D7A1F4 /* admobSDK */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				830B5C100E5ED4C100C7819F /* UIKit.framework */,
@@ -396,12 +384,10 @@
 				83B2574B0E63022200468741 /* OpenAL.framework */,
 				83B2574E0E63025400468741 /* libiconv.2.dylib */,
 				56FD43950ED4745200FE3770 /* CFNetwork.framework */,
-				8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */,
 				08B24F75137BFDFA00FBA309 /* iAd.framework */,
 				7F36C10E13C5C673007FBDD9 /* CoreMedia.framework */,
 				7F36C10F13C5C673007FBDD9 /* CoreVideo.framework */,
 				7F36C11013C5C673007FBDD9 /* AVFoundation.framework */,
-				56B7959A1442E0F20026B3DD /* CoreGraphics.framework */,
 				56B795C11442E1100026B3DD /* CoreMotion.framework */,
 				56B796191442E1B80026B3DD /* GameKit.framework */,
 			);
@@ -411,15 +397,39 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78F3CB351647963A00D7A1F4 /* AdSupport.framework */,
+				56B7959A1442E0F20026B3DD /* CoreGraphics.framework */,
+				56BCBA380FCF049A0030C3B2 /* SystemConfiguration.framework */,
+				9333A960427C440C99DB75AB /* MessageUI.framework */,
+				8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */,
+				78F3CB33164795FD00D7A1F4 /* StoreKit.framework */,
+				5682F4B10F3B34FF007A219C /* MediaPlayer.framework */,
 				C0EAAAEFE0BF4B3DB09AE32E /* libGoogleAdMobAds.a */,
 				69AD6D2B7BCC4A24AD81F5C2 /* libP31MonoBridge.a */,
 				EB2E268E4C6F450A944B27D7 /* libGameCenterPlugin.a */,
 				DD7826A6B5C34751B3B8B622 /* libz.1.1.3.dylib */,
 				EF479A3E4EC2415CAD2C466C /* libsqlite3.0.dylib */,
-				9333A960427C440C99DB75AB /* MessageUI.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78F3CB25164795B600D7A1F4 /* admobSDK */ = {
+			isa = PBXGroup;
+			children = (
+				78F3CB26164795CC00D7A1F4 /* GADAdMobExtras.h */,
+				78F3CB27164795CC00D7A1F4 /* GADAdNetworkExtras.h */,
+				78F3CB28164795CC00D7A1F4 /* GADAdSize.h */,
+				78F3CB29164795CC00D7A1F4 /* GADBannerView.h */,
+				78F3CB2A164795CC00D7A1F4 /* GADBannerViewDelegate.h */,
+				78F3CB2B164795CC00D7A1F4 /* GADInterstitial.h */,
+				78F3CB2C164795CC00D7A1F4 /* GADInterstitialDelegate.h */,
+				78F3CB2D164795CC00D7A1F4 /* GADRequest.h */,
+				78F3CB2E164795CC00D7A1F4 /* GADRequestError.h */,
+				78F3CB2F164795CC00D7A1F4 /* libGoogleAdMobAds.a */,
+				78F3CB30164795CC00D7A1F4 /* README.txt */,
+			);
+			name = admobSDK;
 			sourceTree = "<group>";
 		};
 		97583088C99543308C3C570E /* GameCenter */ = {
@@ -623,6 +633,7 @@
 				83DEA7440EACED0700D8A291 /* Icon.png in Resources */,
 				564640A11605DDE500F79DC3 /* Default-568h@2x.png in Resources */,
 				57371B0634874D6A9038C481 /* AdWhirlWebBrowser.xib in Resources */,
+				78F3CB32164795CC00D7A1F4 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,7 +735,6 @@
 				4A2920B9BD104C2A801EB2A3 /* CJSONScanner.m in Sources */,
 				0BF6E1A8A1DE4DD0ABBFCD83 /* CJSONSerializer.m in Sources */,
 				6EE8C3986BD547ACB0BFD174 /* CSerializedJSONData.m in Sources */,
-				FFB1E1B51496414D848C7282 /* AdWhirlAdapterGoogleAdMobAds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,6 +783,7 @@
 					"-all_load",
 					"-weak_framework",
 					CoreMotion,
+					"-ObjC",
 					"-weak-lSystem",
 				);
 				PRODUCT_NAME = bonomu;
@@ -809,6 +820,7 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"-Wl,-S,-x",
+					"-ObjC",
 				);
 				PRODUCT_NAME = bonomu;
 				SDKROOT = iphoneos;
@@ -925,6 +937,15 @@
 					CoreMotion,
 					"-weak-lSystem",
 					"-Wl,-S,-x",
+					"-ObjC",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-all_load",
+					"-weak_framework",
+					CoreMotion,
+					"-weak-lSystem",
+					"-Wl,-S,-x",
+					"-ObjC",
 				);
 				PRODUCT_NAME = bonomu;
 				SDKROOT = iphoneos;
